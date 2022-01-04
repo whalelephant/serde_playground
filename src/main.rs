@@ -109,7 +109,7 @@ impl<'de> Deserialize<'de> for Input {
 }
 
 fn main() {
-    let json_file_path = Path::new("./wyuen8_input.json");
+    let json_file_path = Path::new("./input.json");
     let file = File::open(json_file_path).expect("file not found");
     let input: Input = serde_json::from_reader(file).expect("error while reading");
     println!("input: {:?}", input);
