@@ -5,5 +5,5 @@ edition = "2021"
 
 [dependencies]
 serde = { version = "1.0.130", features = ["derive" ] }
-serde_json = { version = "1.0.48", features = ["arbitrary_precision"]}
+serde_json = { version = "1.0.48", features = ["raw_value"]}
 num-bigint = "0.4.3"
