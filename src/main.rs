@@ -49,6 +49,7 @@ fn main() {
     let mut r = BufReader::new(file);
     let mut input = Vec::new();
     r.read_to_end(&mut input).unwrap();
+    // Direct serde_json::from_reader fails to read RawValue
     let re: Input = serde_json::from_slice(&input).unwrap();
     println!("input: {:?}", re);
 }
